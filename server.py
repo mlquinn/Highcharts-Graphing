@@ -10,7 +10,8 @@ Handler = http.server.SimpleHTTPRequestHandler
 
 try:
     server = socketserver.TCPServer(('',PORT), Handler)
-    print("Serving port at:", PORT)
+    print("Serving on port:", PORT)
+    print("Visit localhost:8000 to begin.")
     server.serve_forever()
 except: 
     print("\tServer is terminating...")
